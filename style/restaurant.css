@@ -161,7 +161,7 @@ img {
     inset: 0;
     background:
         linear-gradient(rgba(20, 17, 14, 0.50), rgba(20, 17, 14, 0.55)),
-        url('images/Resturant.jpg') center/cover no-repeat;
+        url(../images/Resturant.jpg) center/cover no-repeat;
     transform: scale(1.04);
     transition: transform 8s ease;
 }
