@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation – Hotel Buddha</title>
+    <link rel="stylesheet" href="style/styleR.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="header" id="header">
+    <nav class="navbar">
+        <a href="home.html" class="brand-wrap">
+            <img src="images/logo.jpeg" class="logo" alt="Hotel Buddha logo">
+            <span class="brand-text">Hotel Buddha</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <div class="hero-bg"></div>
+    <div class="page-hero-content">
+        <span class="hero-label">Room Booking</span>
+        <h1>Reserve Your Stay,<br><em>Simply & Smoothly</em></h1>
+        <p>Complete your reservation in a few quick steps.</p>
+    </div>
+</section>
+
+<main id="mainView" class="reservation-layout">
+    <section id="card" class="reservation-card fade-in">
+        <div class="card-head">
+            <img src="images/logo.jpeg" class="small-logo" alt="Hotel Buddha logo">
+            <div>
+                <div class="title">Reserve a Room</div>
+                <p class="subtitle">Fill in your details below</p>
+            </div>
+        </div>
+
+        <div class="form-grid">
+            <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Enter your full name" required>
+                <small class="error-text" id="nameError"></small>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+                <small class="error-text" id="emailError"></small>
+            </div>
+
+            <div class="field">
+                <label for="contact">Contact</label>
+                <input id="contact" type="tel" placeholder="Enter your phone number" required>
+                <small class="error-text" id="contactError"></small>
+            </div>
+
+            <div class="field">
+                <label for="room">Room Type</label>
+                <select id="room" required>
+                    <option value="">Select</option>
+                    <option>Super Room</option>
+                    <option>Deluxe Room</option>
+                    <option>Family Room</option>
+                </select>
+                <small class="error-text" id="roomError"></small>
+            </div>
+
+            <div class="field">
+                <label for="checkin">Check-in</label>
+                <input id="checkin" type="date" required>
+                <small class="error-text" id="checkinError"></small>
+            </div>
+
+            <div class="field">
+                <label for="checkout">Check-out</label>
+                <input id="checkout" type="date" required>
+                <small class="error-text" id="checkoutError"></small>
+            </div>
+
+            <div class="field">
+                <label for="guests">Guests</label>
+                <select id="guests">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="submitBtn" class="btn">Confirm Reservation</button>
+    </section>
+
+    <aside class="info fade-in">
+        <h3>Room & Pricing</h3>
+        <div class="room"><span>Super Room</span><span>£140</span></div>
+        <div class="room"><span>Deluxe Room</span><span>£95</span></div>
+        <div class="room"><span>Family Room</span><span>£180</span></div>
+
+        <div class="info-box">
+            <h4>Booking Summary</h4>
+            <div class="summary-line"><span>Selected Room</span><strong id="liveRoom">—</strong></div>
+            <div class="summary-line"><span>Guests</span><strong id="liveGuests">1</strong></div>
+            <div class="summary-line"><span>Nights</span><strong id="liveNights">0</strong></div>
+            <div class="summary-line total"><span>Total</span><strong id="liveTotal">£0</strong></div>
+        </div>
+    </aside>
+</main>
+
+<section id="success" class="success-card" aria-live="polite">
+    <img src="images/logo.jpeg" class="success-logo" alt="Hotel Buddha logo">
+    <h2>Reservation Confirmed</h2>
+    <p>Your booking is confirmed.</p>
+    <div id="summary"></div>
+    <button id="backBtn" class="btn back-btn">Back</button>
+</section>
+
+<div class="footer">© 2026 Hotel Buddha</div>
+
+<script src="Js/scriptR.js"></script>
+</body>
+</html>

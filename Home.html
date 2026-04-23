@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Buddha</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/Home.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="header" id="header">
+    <nav class="navbar">
+        <a href="home.html" class="brand-wrap">
+            <img src="images/logo.jpeg" class="logo" alt="Hotel Buddha logo">
+            <span class="brand-text">Hotel Buddha</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <div class="hero-bg"></div>
+    <div class="page-hero-content">
+        <span class="hero-label">Welcome to Hotel Buddha</span>
+        <h1>Affordable Luxury,<br><em>Peacefully Delivered</em></h1>
+        <p>Experience comfort, elegance, and thoughtful hospitality in every stay.</p>
+        <a href="room.html" class="btn-filled">Explore Our Rooms</a>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<section class="booking-bar-section fade-in">
+    <div class="booking-bar">
+        <form id="bookingForm">
+            <div class="input-box">
+                <label for="roomType">Choose Room</label>
+                <select id="roomType" required>
+                    <option value="">Select Room</option>
+                    <option value="super">Super Room</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="family">Family Room</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label for="checkin">Check In</label>
+                <input type="date" id="checkin" required>
+            </div>
+
+            <div class="input-box">
+                <label for="checkout">Check Out</label>
+                <input type="date" id="checkout" required>
+            </div>
+
+            <div class="input-box">
+                <label for="guests">Guests</label>
+                <select id="guests">
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4+ Guests</option>
+                </select>
+            </div>
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </div>
+</section>
+
+<section class="section-title fade-in">
+    <span class="section-label">Accommodations</span>
+    <h2>Explore Our Rooms</h2>
+    <p>Choose the perfect room for a comfortable and relaxing stay.</p>
+</section>
+
+<section class="rooms-preview">
+    <div class="room-cards">
+        <div class="card fade-in">
+            <img src="images/deluxe-room.jpg" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <p>Comfortable and peaceful stay with warm tones and natural light.</p>
+            <a href="rooms.html" class="card-link">View Room</a>
+        </div>
+
+        <div class="card fade-in">
+            <img src="images/super-room.jpg" alt="Super Room">
+            <h3>Super Room</h3>
+            <p>Luxury experience with stylish modern design and premium comfort.</p>
+            <a href="rooms.html" class="card-link">View Room</a>
+        </div>
+
+        <div class="card fade-in">
+            <img src="images/family-room.jpg" alt="Family Room">
+            <h3>Family Room</h3>
+            <p>Perfect for family vacations with spacious and comfortable accommodation.</p>
+            <a href="rooms.html" class="card-link">View Room</a>
+        </div>
+    </div>
+</section>
+
+<section class="restaurant-section fade-in">
+    <div class="restaurant-overlay"></div>
+    <div class="restaurant-content">
+        <span class="section-label light">Dining Experience</span>
+        <h2>Our Restaurant</h2>
+        <p>Enjoy delicious meals in a calm and elegant atmosphere, thoughtfully prepared for every guest.</p>
+        <a href="restaurant.html" class="btn-filled">Explore Restaurant</a>
+    </div>
+</section>
+
+<section class="section-title fade-in">
+    <span class="section-label">Hospitality</span>
+    <h2>Our Services</h2>
+    <p>Thoughtful services designed to make every part of your stay effortless and relaxing.</p>
+</section>
+
+<section class="services-preview">
+    <div class="service-box">
+        <div class="service fade-in">Free WiFi</div>
+        <div class="service fade-in">24/7 Support</div>
+        <div class="service fade-in">Spa &amp; Wellness</div>
+        <div class="service fade-in">Room Service</div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="footer-logo">Hotel <em>Buddha</em></div>
+            <p>Find peace and luxury in every stay.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="rooms.html">Rooms</a>
+            <a href="restaurant.html">Restaurant</a>
+            <a href="services.html">Services</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Email: info@hotelbuddha.com</p>
+            <p>Phone: +44 123 456 789</p>
+        </div>
+    </div>
+
+    <p class="copyright">© 2026 Hotel Buddha. All rights reserved.</p>
+</footer>
+
+<script src="Js/Home.js"></script>
+</body>
+</html>
